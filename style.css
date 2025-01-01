@@ -3,14 +3,30 @@
     padding: 0;
     box-sizing: border-box; 
 }
+body{
+    background-color: #d7eafa; /* Màu nền mới (xanh dương nhạt) */
+}
 .linehead{
     width: 100%;
-    height: 55px;
+    height: 60px;
     background-image: linear-gradient(to top, rgba(28, 63, 111, 1),rgb(51, 100, 170));
     display: flex;             /* Bật Flexbox */
     justify-content: center;   /* Căn giữa theo chiều ngang */
-    align-items: center;       /* Căn giữa theo chiều dọc */
+    align-items: center;   
+    color: aliceblue;    
 }
+.linefooter {
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to top, rgba(28, 63, 111, 1), rgb(51, 100, 170));
+    display: flex; /* Sử dụng flexbox */
+    flex-direction: column; /* Chuyển các phần tử thành cột, cho phép xuống dòng */
+    align-items: center; /* Canh giữa theo chiều ngang */
+    justify-content: center; /* Canh giữa theo chiều dọc */
+    color: aliceblue; 
+    text-align: center;   
+}
+
 .titlehead{
     font-family: 'Roboto', sans-serif;
     margin-bottom: 30px; /* Khoảng cách dưới input */
@@ -20,12 +36,6 @@
 .logohead{
     height: 40px;
     width: auto;
-}
-.text{  
-    font-family: 'Roboto', sans-serif;
-    margin-left: 20px;
-    margin-top: 8px;
-    margin-bottom: 8px;
 }
 .choices {
     display: flex;
@@ -58,6 +68,16 @@
     background-color: rgba(4,154,215,255);
     border: 3px solid rgba(28,63,111,255);
 }
+.text {
+    font-family: 'Roboto', sans-serif;
+    margin-left: auto;  /* Tự động căn trái */
+    margin-right: auto; /* Tự động căn phải */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;  /* Căn giữa văn bản trong .text */
+    width: 200px; /* Đặt chiều rộng của chữ tương đương với các input */
+}
+
 .o input[type="text"],
 .o input[type="date"],
 .o input[type="time"] {
@@ -70,15 +90,17 @@
     border: 2px solid #054e9c; /* Màu sắc viền và độ dày viền */
     outline: none; /* Xóa viền mặc định khi focus */
     display: block; /* Đảm bảo input là block-level element */
-    margin-left: 20px;
-
+    margin-left: auto; /* Tự động canh trái */
+    margin-right: auto; /* Tự động canh phải */
 }
 .abc{
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+
 }
-.complete-btn {
+.complete-btn{
     width: 120px; /* Đặt chiều rộng cho nút */
     height: 35px; /* Kích thước chiều cao */
     border-radius: 18px; /* Bo tròn các góc */
@@ -86,11 +108,32 @@
     margin-top: 20px; /* Khoảng cách trên nút */
     background-color: rgba(28, 63, 111, 1); /* Màu nền */
     color: white; /* Màu chữ */
-    margin-left: 20px; /* Khoảng cách bên trái */
     border: none; /* Bỏ viền mặc định */
     text-decoration: none; /* Loại bỏ gạch chân từ thẻ <a> */
-    display: inline-block; /* Giữ kiểu block để dễ căn chỉnh */
+    display: block; /* Đảm bảo nút là block-level element */
     text-align: center; /* Căn giữa chữ trong nút */
     line-height: 35px; /* Căn giữa chữ theo chiều dọc */
+    margin-left: auto; /* Căn giữa theo chiều ngang */
+    margin-right: auto;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
-
+.complete-btn2{
+    width: 120px; /* Đặt chiều rộng cho nút */
+    height: 35px; /* Kích thước chiều cao */
+    border-radius: 18px; /* Bo tròn các góc */
+    margin-bottom: 20px; /* Khoảng cách dưới nút */
+    margin-top: 20px; /* Khoảng cách trên nút */
+    background-color: rgb(214, 23, 23); /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Bỏ viền mặc định */
+    text-decoration: none; /* Loại bỏ gạch chân từ thẻ <a> */
+    display: block; /* Đảm bảo nút là block-level element */
+    text-align: center; /* Căn giữa chữ trong nút */
+    line-height: 35px; /* Căn giữa chữ theo chiều dọc */
+    margin-left: auto; /* Căn giữa theo chiều ngang */
+    margin-right: auto;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+/* Thêm khoảng cách phía trên để nền đỏ không dính sát vào form */

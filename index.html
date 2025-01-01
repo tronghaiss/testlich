@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web lịch</title>
+    <link rel="shortcut icon" href="logo-avatar.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <div class="linehead">
+        <img src="./logo.png" alt="" class="logohead">
+    </div>
+    <div class="titlehead">
+        <h1>CALENDAR</h1>
+    </div>
+</head>
+<body>
+    <form id="userForm">
+        <p class="text">Môn học</p>
+        <div class="o">
+            <input type="text" id="subject" name="subject" placeholder="Nhập tên môn học" required>
+        </div>
+
+        <p class="text">Ngày bắt đầu</p>
+        <div class="o">
+            <input type="date" id="start-date" name="start-date" required>
+        </div>
+
+        <p class="text">Ngày kết thúc</p>
+        <div class="o">
+            <input type="date" id="end-date" name="end-date" required>
+        </div>
+
+        <p class="text">Thời gian học ( SA: Sáng , CH: Chiều )</p>
+        <div class="o">
+            <input type="time" id="start-time" name="start-time" required>
+        </div>
+
+        <p class="text">Thời gian kết thúc ( SA: Sáng , CH: Chiều )</p>
+        <div class="o">
+            <input type="time" id="end-time" name="end-time" required>
+        </div>
+
+        <!-- Nút Hoàn thành với type="submit" -->
+        <button type="submit" class="complete-btn">Hoàn thành</button>
+    </form>
+
+    <script src="script.js"></script>
+    <p class="abc">! Phần mềm thử nghiệm chỉ dùng được trên ios !</p>
+</body>
+<footer>
+    <div class="linehead">
+        <p>For work:bearbrickcm@gmail.com</p>
+    </div>
+</footer>
+</html>

@@ -20,12 +20,12 @@
             <input type="text" id="subject" name="subject" placeholder="Nhập tên môn học" required>
         </div>
 
-        <p class="text">Ngày bắt đầu</p>
+        <p class="text">Ngày bắt đầu học</p>
         <div class="o">
             <input type="date" id="start-date" name="start-date" required>
         </div>
 
-        <p class="text">Ngày kết thúc</p>
+        <p class="text">Ngày kết thúc học</p>
         <div class="o">
             <input type="date" id="end-date" name="end-date" required>
         </div>
@@ -34,14 +34,24 @@
         <div class="o">
             <input type="time" id="start-time" name="start-time" required>
         </div>
-
-        <p class="text">Thời gian kết thúc </p>
+                <p class="text">Thời gian kết thúc </p>
         <div class="o">
             <input type="time" id="end-time" name="end-time" required>
         </div>
+        <fieldset class="repeat-day-fieldset">
+            <legend>( Chọn ngày lặp lại )</legend>
+            <div class="repeat-day-options">
+                <label><input type="checkbox" class="repeat-day" value="MO"> Thứ 2</label>
+                <label><input type="checkbox" class="repeat-day" value="TU"> Thứ 3</label>
+                <label><input type="checkbox" class="repeat-day" value="WE"> Thứ 4</label>
+                <label><input type="checkbox" class="repeat-day" value="TH"> Thứ 5</label>
+                <label><input type="checkbox" class="repeat-day" value="FR"> Thứ 6</label>
+                <label><input type="checkbox" class="repeat-day" value="SA"> Thứ 7</label>
+                <label><input type="checkbox" class="repeat-day" value="SU"> Chủ Nhật</label>
+            </div>
+        </fieldset>
 
-        <!-- Nút Hoàn thành với type="submit" -->
-        <button type="submit" class="complete-btn">Hoàn thành</button>
+        <button type="submit" class="complete-btn"> Hoàn thành</button>
         <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdMqC0KX7b02BnB1j2pO-0ZNfyPXHgNfkNjq8jWYeuBujx1tw%2Fviewform%3Fusp%3Ddialog%26fbclid%3DIwZXh0bgNhZW0CMTAAAR3A1rXq4RyGnKpX9x8MKjEZu-DwwPlT9slGawIGgwpH4dFfqA68P2AmKDU_aem_UnrU0PjDzREyTS_oHBrTNg&h=AT2ZHzo-EYYt8dkwRkBchKvTdTNBeUx0x3hav0J3hjN1ja7pK4fFrfjgwxdbkaSxlJSayLoevtLR4P4WHzAtKmcKHEJncz7GpiDNLickDE3le3okO1C4sW903IZrArtzaiAn1kF07nGAbCYOuEmYiw" class="complete-btn2">Feedback</a>
     </form>
 
